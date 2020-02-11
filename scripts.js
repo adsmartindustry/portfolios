@@ -7,7 +7,7 @@ request.onload = function() {
 	const obj = JSON.parse(this.response);
 	if (request.status >= 200 && request.status < 400) {
 		const temp = obj.main.temp;
-		console.log(temp);
+		console.log(typeof(temp));
 		tempElement.innerHTML = 'De temperatuur in Arnhem is ' + temp + ' &#8451';
 	} else {
 		console.log('Deze plaats is onbekend');
